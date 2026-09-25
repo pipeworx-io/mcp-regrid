@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/regrid",
   "title": "Regrid",
   "description": "Regrid MCP — wraps the Regrid Parcel API v2 (regrid.com)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/regrid",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-regrid",
