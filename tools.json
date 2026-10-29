@@ -1,0 +1,57 @@
+[
+  {
+    "name": "regrid_parcel_by_address",
+    "description": "Look up the parcel — owner, zoning, land use, boundaries — for an address. Searches Regrid's nationwide US/CA parcel database by full address string and returns parcel number, owner, mailing address, land use, zoning, acreage, and location. Example: regrid_parcel_by_address({ query: \"1600 Pennsylvania Ave NW, Washington, DC\", _apiKey: \"your-token\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Full address string, e.g. \"1600 Pennsylvania Ave NW, Washington, DC 20500\""
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Max parcels to return (default 5, max 20)"
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Regrid API token (get one free at regrid.com — 30-day sandbox)"
+        }
+      },
+      "required": [
+        "query",
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "regrid_parcel_by_point",
+    "description": "Find parcels at a lat/lon point — returns the parcel(s) whose boundary contains or sits near the coordinate, with owner, zoning, land use, acreage, and boundary. Example: regrid_parcel_by_point({ lat: 38.8977, lon: -77.0365, _apiKey: \"your-token\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "description": "Latitude of the point, e.g. 38.8977"
+        },
+        "lon": {
+          "type": "number",
+          "description": "Longitude of the point, e.g. -77.0365"
+        },
+        "radius": {
+          "type": "number",
+          "description": "Optional search radius in meters around the point"
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Regrid API token (get one free at regrid.com — 30-day sandbox)"
+        }
+      },
+      "required": [
+        "lat",
+        "lon",
+        "_apiKey"
+      ]
+    }
+  }
+]
