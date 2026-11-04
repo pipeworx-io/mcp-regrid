@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-regrid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Regrid MCP — wraps the Regrid Parcel API v2 (regrid.com)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "regrid",
     "gatewaySlug": "regrid",
-    "sourceHash": "v1-2bc62a85f4c7a13fd9aaa9db51d46270bfcd2f0eca77780c93db1c3949c3450f",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-b5d30eb8090b14304c656d62d46077fcb9bd4a7d39497059928ce26c19b5d77a",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
